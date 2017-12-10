@@ -1,0 +1,32 @@
+{
+  "name": "essxiv",
+  "description": "Love, Hate",
+  "main": "index.js",
+  "authors": [
+    "greg hasenauer"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "api",
+    "selfmade",
+    "dedication",
+    "art",
+    "love",
+    "hate",
+    "time",
+    "hope",
+    "change",
+    "regret"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
