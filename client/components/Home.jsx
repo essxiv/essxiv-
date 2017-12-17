@@ -1,30 +1,50 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getAllTasks, postNewTask } from '../../redux/reducer';
-import Header from './Header';
+import { withRouter } from 'react-router';
+import { } from '../../redux/reducers';
+import Landing from './Landing';
 
 class Home extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
-    componentDidMount(){
-        getAllTasks();
+    componentWillMount() {
+        console.log('Component Will Mount(): Home')
+    }
+
+    componentDidMount() {
+        console.log('Component Did Mount(): Home')
     }
 
     render() {
         return (
             <div>
                 <div id="body">
-                    <Header />
+                    <video muted id="background-video" loop autoPlay>
+                        <source src="https://d1235ca2z646oc.cloudfront.net/videos/processed/2/3M2A4295.mp4.mp4" type="video/mp4" />
+                        <source src="https://d1235ca2z646oc.cloudfront.net/videos/processed/2/3M2A4295.mp4.mp4" type="video/ogg" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <Landing />
                 </div>
             </div>
         )
     }
 }
 
-const mapState = ({tasks}) => ({tasks});
-const mapDispatch = { getAllTasks, postNewTask };
+function mapState(state) {
+    console.log('Redux States: ', state);
+    return {
+        reducer: state.reducer
+    }
+}
+ function mapDispatch(dispatch) {
+     console.log(dispatch);
+     return {
+        // putChangeStatus: (task, bool) => {dispatch(putChangeStatus(task, bool))}
+     }
+ }
 
-export default connect(mapState, mapDispatch)(Home);
+export default withRouter(connect(mapState, mapDispatch)(Home)) ;
