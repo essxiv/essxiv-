@@ -1,4 +1,5 @@
 const express = require('express');
+const favicon = require('serve-favicon');
 const app = express();
 const path = require('path');
 // const routes = require('./routes/index');
@@ -8,6 +9,7 @@ const path = require('path');
 const Port = 3000;
 
 //serve up static files
+app.use(favicon(path.join(__dirname, '../client/styles/favicon.ico')));
 app.use(express.static('bower_components'));
 app.use(express.static(path.resolve(__dirname, '..', 'client')));
 app.use(express.static(path.resolve(__dirname, '..', 'node_modules')));

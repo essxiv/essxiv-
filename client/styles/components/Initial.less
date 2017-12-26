@@ -1,0 +1,390 @@
+#Initial {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: black;
+    overflow: hidden !important;
+    font-family: 'Megrim';
+}
+
+.link-to {
+    text-decoration: none !important;
+    list-style: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#title {
+    position: relative;
+    color: white;
+    font-size: 26px;
+    opacity: 1 !important;
+    z-index: 1;
+    left: 25px;
+    top: 23vh;
+}
+
+#credits {
+    position: relative;    
+    color: white;
+    float: right;
+    top: 37vh;
+}
+
+.life-container {
+    position: relative;    
+    float: right;
+    width: 75%;
+    height: 30vh;
+    margin: 40px;    
+}
+
+.life-box {
+    display: block;
+    height: 100%;
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../styles/img/jedi1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: -2px 5px 79px -1px rgba(0,0,0,0.81);
+    -moz-box-shadow: -2px 5px 79px -1px rgba(0,0,0,0.81);
+    box-shadow: -2px 5px 79px -1px rgba(0,0,0,0.81);
+    &:hover {
+        opacity: 0.7;
+        background-color: #125699;
+        transition: all 1.4s ease;
+    }
+}
+
+.life-box-sith {
+    display: block;
+    height: 100%;
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../styles/img/jedi2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: -2px 5px 79px -1px rgba(0,0,0,0.81);
+    -moz-box-shadow: -2px 5px 79px -1px rgba(0,0,0,0.81);
+    box-shadow: -2px 5px 79px -1px rgba(0,0,0,0.81);
+    &:hover {
+        opacity: 0.7;
+        background-color: #125699;
+        transition: all 1.4s ease;
+    }
+}
+
+.life-box-jedi {
+    display: block;
+    height: 100%;
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../styles/img/jedi1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: -2px 5px 79px -1px rgba(0,0,0,0.81);
+-moz-box-shadow: -2px 5px 79px -1px rgba(0,0,0,0.81);
+box-shadow: -2px 5px 79px -1px rgba(0,0,0,0.81);
+    &:hover {
+        opacity: 0.7;
+        background-color: #125699;
+        transition: all 1.4s ease;
+    }
+}
+
+.jedi-code {
+    font-size: 16px;
+    padding-left: 5px;
+    color: white;
+    &:hover {
+        color: #125699;
+    }
+}
+
+
+.top {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../styles/img/force1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 50vh;
+    opacity: 0.7;
+    &:hover {
+        opacity: 1;
+        background-color: #125699;
+        transition: all 1.4s ease;
+    }
+}
+
+
+.enter {
+    background-color: white;
+    border: 1px solid white;
+    z-index: 100;
+    height: 1vh;
+    &:hover {
+        background-color: white;
+        border: 1px solid white;       
+        transition: all 1.4s ease;
+    }
+}
+
+// .enter-two {
+//     position: absolute;
+//     z-index: 9999;
+//     margin: auto;
+//     top: 0; left: 0; bottom: 0; right: 0;
+//     width: 100px;
+//     height: 100px;
+//     border: 1px solid white;
+//     border-radius: 50%;
+//     border-color: white;
+//     background-color: grey;
+//     &:hover {
+//         background-color: black;
+//         border: 1px solid black;        
+//         transition: all 1.4s ease;
+//     }    
+// }
+
+
+.bars-container {
+    display: block;
+    position: relative;
+    height: 8.25vh;
+    padding: 20px;
+}
+
+.bars {
+    position: relative;
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;    
+    margin: 15px;
+    border-radius: 4px;
+    &:hover {
+        transition: all 0.5s ease;        
+    }
+}
+
+.bars-text {
+    position: relative;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    &:hover {
+        opacity: 1;
+        // font-size: 20px;
+        // color: #870A0A;
+        // border-color: #870A0A;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+}
+
+.appear {
+    display: none;
+}
+
+
+#bottom {
+    position: relative;    
+    background-size: cover;
+    background: url('../styles/img/force2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover;
+    width: auto;   
+    height: 50vh;
+    opacity: 0.7;
+    &:hover {
+        opacity: 0.8;
+        background-color: #125699;
+        transition: all 1.4s ease;
+    }
+}
+
+
+@media screen and (max-width: 971px) {
+    .top {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 49.5vh;
+        opacity: 0.7;
+        &:hover {
+            opacity: 1;
+            background-color: #125699;
+            transition: all 1.4s ease;
+        }
+    }
+
+    .bottom {
+        position: relative;    
+        background-size: cover;
+        background: url('');
+        background-repeat: no-repeat;
+        background-position: center;    
+        background-size: cover;
+        width: auto;   
+        height: 49.5vh;
+        opacity: 0.7;
+        &:hover {
+            opacity: 1;
+            background-color: #125699;
+            transition: all 1.4s ease;
+        }
+    }
+
+    .bars-container {
+        display: none;
+    }
+    
+    .life-box {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@loop: 1.5s;
+@size: 100px;
+
+@staticSize: 50%;
+@ballSize: 20px;
+@ballScale: .5;
+
+
+.spinner {
+  width: @size;
+  height: @size;
+  z-index: 9999;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border: 4px solid white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ball-1 {
+  height: @staticSize;
+  width: @staticSize;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  z-index: 1;
+  animation: shrink 3*@loop infinite linear;
+}
+
+.ball-1:before {
+  content: '';
+  background: #7db9e8;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+}
+
+.electron() {
+  position: absolute;
+  /* background: rgba(0,0,255,.5); */
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  
+  &:before {
+    content: '';  
+    height: @ballSize;
+    width: @ballSize;
+    border-radius: 50%;
+    background: white;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+  }
+}
+
+.ball-2,
+.ball-3,
+.ball-4 {
+  .electron();
+}
+
+.ball-2 {
+  animation: zindex @loop (@loop/2) infinite steps(2, end);
+}
+
+@delay3: -(@loop / 3 * 2);
+.ball-3 {
+  transform: rotate(120deg);  
+  animation: zindex @loop (@delay3 + (@loop/ 2)) infinite steps(2, end);
+}
+
+@delay4: -(@loop / 3);
+.ball-4 {
+  transform: rotate(240deg);   
+  animation: zindex @loop (@delay4 + (@loop/ 2)) infinite steps(2, end);
+}
+
+.ball-2:before {
+  transform: rotate(0);
+  animation: position @loop infinite ease, size @loop -(@loop / 4 * 3) infinite ease;
+}
+
+.ball-3:before {
+  animation: position @loop @delay3 infinite ease, size @loop (@delay3 / 4 * 3) infinite ease;
+}
+
+.ball-4:before {
+  animation: position @loop @delay4 infinite ease, size @loop (@delay4 / 4) infinite ease;
+}
+
+@keyframes position {
+  50% {
+    top: @size - @ballSize;
+    left: @size - @ballSize;
+  }
+}
+
+@keyframes size {
+  50% {
+    transform: scale(@ballScale, @ballScale);
+  }
+}
+
+@keyframes zindex {
+  100% {
+    z-index: 10;
+  }
+}
+
+@keyframes shrink {
+  50% {
+    transform: scale(.9,.9)
+  }
+}

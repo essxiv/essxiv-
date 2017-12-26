@@ -28,6 +28,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "smoothstate": "^0.7.2",
+    "animsition": "^4.0.2"
   }
 }

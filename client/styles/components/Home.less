@@ -1,18 +1,25 @@
-#body {
+html, body {
     width: auto;
     height: auto;
-    position: relative;
     overflow: hidden !important;
     background-size: cover;
-    background: -webkit-linear-gradient(to right, #16bffd, #cb3066);
-    background: linear-gradient(to right, #16bffd, #cb3066); 
+    // background-color: #414141;
+    // background-color: linear-gradient(to right, rgb(72, 170, 187), rgba(54, 67, 185, 1));
+    // background: -webkit-linear-gradient(to right, #24c6dc, #514a9d); /* Chrome 10-25, Safari 5.1-6 */
+    opacity: 1;
     transition:all 0.3s ease;
     margin: 0px !important;
     padding: 0px !important;
+    min-height: 100%;
+}
+
+#body {
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #background-video {
     display: block;
+    opacity: 0.8;
     position: absolute;
     width: auto;
     height: auto;
@@ -22,6 +29,8 @@
     margin: 0px !important;
     padding: 0px !important;
 }
+
+
 
 @media screen and (max-width: 770px) {
     #background-video {

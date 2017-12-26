@@ -1,0 +1,119 @@
+#Experience {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    font-family: 'Megrim';
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    letter-spacing: 1px;
+}
+
+.experience-container {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    opacity: 0.8;
+    background: url('../styles/img/girl_2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.experience-main-container {
+    position: relative;
+    width: auto;
+    height: auto;
+
+}
+
+
+.experience-main-title {
+    position: relative;
+    text-shadow: 1px 1px 2px black; 
+    padding: 40px;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.experience-main-sidenote {
+    visibility: visible;
+    position: absolute;
+    text-shadow: 1px 1px 2px black; 
+    
+    top: 50vh;
+    left: 2%;
+    color: white;
+    font-size: 22px;
+}
+.rotate {
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+
+
+
+.experience-bars-container {
+    border-left: 1px solid white;
+    opacity: 1;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+}
+.experience-section-container {
+    height: 25vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+.experience-section-title {
+    position: relative;    
+    color: white;
+    font-weight: 900;
+    top: 10vh;
+    left: 30%;
+    font-size: 18px;
+}
+
+
+
+.experience-bar {
+    border-bottom: 1px solid  white;
+    width: 100%;
+    height: 15vh;
+    cursor: pointer;
+    &:hover {
+        background-color: #125699;
+        opacity: 0.8;
+        transition: all 1.4s ease;
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+}
+.experience-bar-title {
+    position: relative;
+    float: left;
+    top: 5vh;
+    padding-left: 10%;    
+    font-size: 18px;
+    color: white !important;
+}
+
+
+.experience-hr-expand {
+    position: relative;
+    justify-content: center;
+    display: none;
+    bottom: 3px;
+    color: white;
+    background-color: white;
+    border-bottom: 1px solid white;
+    height: 1px;
+}
+
+
+@media screen and (max-width: 770px) {
+    .experience-main-sidenote {
+        visibility: hidden;
+    }
+
+}

@@ -1,0 +1,111 @@
+
+// .loader:empty {
+//     position: absolute;
+//     top: calc(50% - 4em);
+//     left: calc(50% - 4em);
+//     width: 6em;
+//     height: 6em;
+//     border: 3em solid rgba(0, 0, 0, 0.2);
+//     border-left: 3em solid #000000;
+//     border-radius: 50%;
+//     animation: load8 1.1s infinite linear;
+    
+//   }
+  
+//   @keyframes load8 {
+//     0%   {top: 0px; left: 0px; background: red;}
+//     25%  {top: 0px; left: 100px; background: blue;}
+//     50%  {top: 100px; left: 100px; background: yellow;}
+//     75%  {top: 100px; left: 0px; background: green;}
+//     100% {top: 0px; left: 0px; background: red;}
+
+//   }
+
+
+.circles-loading-container {
+    background: #414141 !important;
+    background-color: #414141 !important;
+    background-image: #414141 !important;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    opacity: 1;
+}
+
+.circles-credits {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+}
+
+.circles-credits-text {
+    color: white;
+    font-size: 29px;
+}
+  
+
+.circles {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    div {
+      border-radius: 100%;
+      border: 8px solid aqua;
+      box-shadow: 0px 0px 20px aquamarine, inset 0px 0px 20px aquamarine;
+      height: 60px;
+      width: 60px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      &:nth-child(1) {
+        transform: rotateY(0deg);
+        animation: spinY 2s infinite linear;
+      }
+      &:nth-child(2) {
+        transform: rotateX(0deg);
+        animation: spinX 2s infinite linear;
+      }
+      &:nth-child(3) {
+        transform: rotateZ(0deg);
+        animation: spinZ 1s infinite ease-in-out;
+      }
+      &:nth-child(4) {
+        transform: rotateA(0deg);
+        animation: spinA 1s infinite ease-in-out;
+      }
+    }
+  }
+  
+@keyframes spinY {
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+@keyframes spinX {
+    to {
+      transform: rotateX(360deg);
+    }
+  }
+  
+@keyframes spinZ {
+    to {
+      transform: rotateZ(180deg);
+    }
+  }
+@keyframes spinA {
+    to {
+      transform: rotateA(90deg);
+    }
+  }

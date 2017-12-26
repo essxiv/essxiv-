@@ -4,6 +4,8 @@ import { withRouter } from 'react-router';
 import { } from '../../redux/reducers';
 import axios from 'axios';
 
+import Menu from './partials/Menu';
+
 class Experience extends Component {
 
     constructor(props) {
@@ -52,10 +54,66 @@ class Experience extends Component {
     }
 
     render() {
-        console.log('GET STATE INFO:  ', this.state.info);
+        console.log(this.state);
+
         return (
-            <div>
-                <div>{this.state.info}</div>
+            <div id="Experience" className="animsition-overlay">
+                <div className="experience-container">
+                    <div className="container-fluid no-padding">
+                        <div className="row no-padding">
+
+                            <div className="col-lg-8 col-md-8 col-sm-8">
+                                <div className="experience-main-container">
+    
+                                    <div className="experience-main-sidenote rotate">Information</div>
+                                
+                                    <div className="experience-main-title">Revolution</div>
+
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-3 col-sm-3 no-padding">
+                                <div className="experience-bars-container">
+                                    <div className="experience-section-container">
+                                        <span className="experience-section-title"></span>
+                                    </div>
+                                    <div className="experience-bar">
+                                        <div className="experience-bar-title">
+                                            <span className="experience-hr-expand"></span>
+                                        information</div>
+                                    </div>
+                                    <div className="experience-bar">
+                                        <div className="experience-bar-title">
+                                            <span className="experience-hr-expand"></span>
+                                            precision
+                                        </div>
+                                    </div>
+                                    <div className="experience-bar">
+                                        <div className="experience-bar-title">
+                                            <span className="experience-hr-expand"></span>
+                                            services
+                                        </div>
+                                    </div>
+                                    <div className="experience-bar">
+                                        <div className="experience-bar-title">
+                                            <span className="experience-hr-expand"></span>
+                                            dedication
+                                        </div>
+                                    </div>
+                                    <div className="experience-bar">
+                                        <div className="experience-bar-title">
+                                            <span className="experience-hr-expand"></span>
+                                            contact
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+
+                            <Menu />
+
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
