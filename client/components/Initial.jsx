@@ -57,7 +57,7 @@ class Initial extends Component {
                         <div className="row no-padding">
                             <div className="col-lg-12 col-md-12 col-sm-12 no-padding">
     
-                                <div className="top animated bounceInLeft">
+                                <div className="top">
                                     <div className="row no-padding">
                                         <div className="col-lg-6 col-md-6 col-sm-6 no-padding">
                                             <div id="title">We Always Have a Choice...</div>
@@ -85,27 +85,27 @@ class Initial extends Component {
                                     </div>
                                 </div>
     
-                                <div id="bottom" className="animated bounceInRight">
+                                <div id="bottom" className="">
                                     <div className="row no-padding">
                                         <div className="col-lg-6 col-md-6 col-sm-6 no-padding">
                                             <div className="bars-container">
                                                 <div className="bars">
-                                                    <span className="bars-text">S</span>
+                                                    {/* <span className="bars-text">S</span> */}
                                                 </div>
                                                 <div className="bars">
-                                                    <span className="bars-text">Y</span>
+                                                    {/* <span className="bars-text">Y</span> */}
                                                 </div>
                                                 <div className="bars">
-                                                    <span className="bars-text">N</span>
+                                                    {/* <span className="bars-text">N</span> */}
                                                 </div>
                                                 <div className="bars">
-                                                    <span className="bars-text">X</span>
+                                                    {/* <span className="bars-text">X</span> */}
                                                 </div>
                                                 <div className="bars">
-                                                    <span className="bars-text">I</span>
+                                                    {/* <span className="bars-text">I</span> */}
                                                 </div>
                                                 <div className="bars">
-                                                    <span className="bars-text">C</span>
+                                                    {/* <span className="bars-text">C</span> */}
                                                 </div>
                                             </div>
                                         </div>

@@ -15,6 +15,7 @@ class Menu extends Component {
 
     componentWillMount() {
         // console.log('ComponentWillMount(): menu')
+        console.log("ComponentWill Mount() :Menu.jsx")
     }
 
     componentWillUnmount() {
@@ -39,7 +40,7 @@ class Menu extends Component {
             <div className="col-lg-1 col-md-1 col-sm-1 no-padding">
                 <a href="/reminisce/se" className="animsition-link"
                                         data-animsition-out-class="overlay-slide-out-top"
-                                        data-animsition-out-duration="500">>
+                                        data-animsition-out-duration="500">
                     <div id="Home-Menu">
                         <div className="menu-title-container">
                             <div className="menu-text">Menu</div>

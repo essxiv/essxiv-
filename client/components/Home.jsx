@@ -13,7 +13,7 @@ class Home extends Component {
         this.state = {
             index: 1,
             video: [
-                // 'https://d1235ca2z646oc.cloudfront.net/videos/processed/2/3M2A4295.mp4.mp4', 'https://d1235ca2z646oc.cloudfront.net/videos/processed/33/StockholmBigcitynight-HD-1.mp4.mp4', 'https://d1235ca2z646oc.cloudfront.net/videos/processed/2/MVI_0449-1.mp4.mp4'
+                'https://d1235ca2z646oc.cloudfront.net/videos/processed/2/3M2A4295.mp4.mp4', 'https://d1235ca2z646oc.cloudfront.net/videos/processed/33/StockholmBigcitynight-HD-1.mp4.mp4', 'https://d1235ca2z646oc.cloudfront.net/videos/processed/2/MVI_0449-1.mp4.mp4'
             ]
         }
     }
@@ -68,9 +68,9 @@ class Home extends Component {
             <div>
                 <div id="body" className="animsition-overlay">
 
-                {/* {
+                {
                     this.loopVideo()
-                } */}
+                }
 
                 {/* <video muted id="background-video" loop autoPlay>
                     <source src="../styles/vid/background-vid.mp4" type="video/mp4" />

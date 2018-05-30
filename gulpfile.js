@@ -22,6 +22,7 @@ gulp.task('watch', () => {
     let scripts = gulp.watch(jsScripts, [ 'scripts' ]);
     let partials = gulp.watch(lessStyles + '/partials/*.less', [ 'less' ])
     let lib = gulp.watch(jsLib, ['scripts']);
+    
     watcher.on('change', (event) => {
         console.log('CSS Change: ' + event.path)
     });

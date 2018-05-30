@@ -21,6 +21,6 @@ $(document).ready(function() {
         overlayClass : 'animsition-overlay-slide',
         overlayParentElement : 'body',
         transition: function(url){ window.location.href = url; }
-      });
+      })
 
-  });
+  })
